@@ -45,6 +45,7 @@ async function run() {
     totalTime += result[r].seconds;
     totalRuns += result[r].runs;
   }
+  console.log(Object.keys(result).length + " days, note it does not include inactive days");
   console.log(totalTime + "s");
   console.log(totalRuns + " runs");
 }
